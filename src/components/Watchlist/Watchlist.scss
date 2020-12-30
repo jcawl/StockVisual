@@ -1,0 +1,28 @@
+.watchlist {
+    width: 200px;
+    padding: .25rem;
+}
+
+.watchlist__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.watchlist__body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.watchlist__item {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid black;
+    margin-bottom: .25rem;
+
+}
+
