@@ -8,7 +8,7 @@ export default class WatchList extends React.Component {
             <div className="watchlist">
                 <div className="watchlist__head">
                     <h3>Watchlist</h3>
-                    <button>edit</button>
+                    <button className="button is-small">edit</button>
                 </div>
                 <div className="watchlist__body">
                     <WatchListItem />
