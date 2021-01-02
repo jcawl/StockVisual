@@ -1,20 +1,20 @@
 import React from 'react';
-import Map from './HomePages/Map';
-import Crypto from './HomePages/Crypto';
-import Stocks from './HomePages/Stocks';
-import Nav from './Nav';
-import Ticker from './StockSearchComps/Ticker';
+import Stocks from './components/HomePages/Stocks';
+import Nav from './components/Nav/Nav';
+import Ticker from './SingleTicker';
 import {Route} from 'react-router-dom';
+import IpoTimeline from './components/HomePages/IpoTimeline'
+import './App.scss'
 
 export default class App extends React.Component{
     render () {
         return(
-            <div>
-                <Nav />
-                <div>
-                    <Route exact path="/" component={Map} />
-                    <Route exact path="/stocks" component={Stocks} />
-                    <Route exact path="/crypto" component={Crypto} />
+            <div className="main-container">
+                <div className="nav-container">
+                    <Nav />
+                </div>
+                <div classname="heatmap-container">
+                    <Route exact path="/" component={Stocks} />
                     <Route exact path="/tickers" component={Ticker} />
                 </div>
             </div>

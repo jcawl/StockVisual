@@ -1,0 +1,19 @@
+.nav-container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    margin: 2rem;
+    justify-content: space-evenly;
+}
+
+.single-link{
+    list-style-type: none;
+}
+
+.search-bar{
+    margin: 2rem;
+}

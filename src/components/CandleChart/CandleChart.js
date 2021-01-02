@@ -14,7 +14,8 @@ const App = () => (
 export default class Comp1 extends React.Component{
     render (){
         return(
-            <div style={{"background":"yellow", "height":"500px"}}>
+            <div style={{ "height":"40vh"}}>
+                Candle Chart
                 {App()}
             </div>
         )

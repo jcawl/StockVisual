@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import {Link, useHistory} from 'react-router-dom';
+import './Nav.scss'
 
-function HomeButton() {
+function SearchBar() {
   let history = useHistory();
 
   function handleClick() {
@@ -38,16 +39,16 @@ export default class Navbar extends React.Component{
 
     
     render () {
-
-  
         return(
-            <div>
-                <li><Link to="/">Forex</Link></li>
-                <li><Link to="/stocks">Stocks</Link></li>
-                <li><Link to="/crypto">Crypto</Link></li>
+            <div className="nav-container">
+              <div className="links">
+                <li className='single-link'><Link to="/">Home</Link></li>
+              </div>
+              <div className="search-bar">
                 <form>
-                    <HomeButton />
+                    <SearchBar />
                 </form>
+              </div>
             </div>
         )
     }
