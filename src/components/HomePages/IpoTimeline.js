@@ -87,12 +87,12 @@ export default class IpoTimeline extends React.Component{
     render(){
 
         return(
-            <div style={{"width":"20vw","color":"white"}}>
+            <div style={{"width":"60vw","height":"40vh","color":"white"}}>
                 IPO Calender
                 <Chrono 
-                    theme={{primary: "#8c98c2", secondary: "#06101f", cardBgColor: "#06101f", cardForeColor: "white" }}
+                    theme={{primary: "#ff9966", secondary: "white", cardBgColor: "white", cardForeColor: "#ff9966" }}
                     items={this.state.items}
-                    mode="VERTICAL"
+                    mode="HORIZONTAL"
                     />
             </div>
         )

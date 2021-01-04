@@ -13,7 +13,7 @@ export default class App extends React.Component{
                 <div className="nav-container">
                     <Nav />
                 </div>
-                <div classname="heatmap-container">
+                <div className="home-container">
                     <Route exact path="/" component={Stocks} />
                     <Route exact path="/tickers" component={Ticker} />
                 </div>

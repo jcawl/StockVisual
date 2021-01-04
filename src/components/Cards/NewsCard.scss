@@ -1,0 +1,84 @@
+.card-container{
+    box-shadow: 5px 1px 15px 1px #777;
+    width: 200px;
+    height: 25vh;
+    display: grid;
+    grid-template-rows: 2fr 8fr 1fr;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.top-container{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+}
+
+.article-title{
+    grid-row: 1;
+    grid-template-columns: 1;
+    color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 500;
+    margin-left: 5%;
+}
+
+.article-link{
+    grid-row: 2;
+    grid-template-columns: 1;
+    color: black;
+    font-size: small;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+}
+
+.title-box{
+    grid-row: 1;
+    grid-template-columns: 2;
+    background-color: lightcoral;
+    margin: auto;
+    padding: 0.2rem;
+}
+
+.card-divider{
+    grid-row: 3;
+    grid-column: 1/-1;
+    display: block;
+    height: 1rem;
+    width: 90%;
+    border-top: 2px solid rgb(163, 163, 163);
+    margin: auto;
+}
+
+
+.middle-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-template-rows: 2;
+}
+
+.article-description{
+    color: black;
+    font-size: small;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+
+.lower-container{
+    display: flex;
+    grid-template-rows: 3;
+}
+
+.tag-box{
+    background-color: rgb(88, 141, 197);
+    margin: auto;
+    padding: 0.2rem;
+    color: white;
+    font-size: small;
+    border-radius: 20% 20% 0% 20%;
+}

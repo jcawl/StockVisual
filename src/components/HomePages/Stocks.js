@@ -1,6 +1,9 @@
 import React from 'react';
 import { ResponsiveTreeMap } from '@nivo/treemap'
 import IpoTimeline from './IpoTimeline.js'
+import Divider from '../Divider/Divider'
+import NewsCard from '../Cards/NewsCard'
+import SocialMediaChart from '../TrendingCharts/SocialMediaChart'
 
 export default class Example extends React.Component {
   state = {
@@ -98,7 +101,6 @@ export default class Example extends React.Component {
           identity="name"
           value="loc"
           valueFormat=".02s"
-          margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
           labelSkipSize={12}
           labelTextColor={{ from: 'color', modifiers: [ [ 'darker', 1.2 ] ] }}
           parentLabelTextColor={{ from: 'color', modifiers: [ [ 'darker', 2 ] ] }}
@@ -107,12 +109,25 @@ export default class Example extends React.Component {
   )
     
     return (
-      <div style={{"height":"80vh","display":"flex"}}>
-        <IpoTimeline />
-        <div style={{"width":"75vw", "marginLeft":"auto", "color":"white"}}>
+      <div style={{"display":"flex", "flexDirection":"column"}}>
+        <Divider title={"Heatmap"}/>
+        <div style={{"height":"70vh", "width":"60vw","marginLeft":"auto", "marginRight":"auto","color":"white"}}>
           Market overview / we should make this customizable
           <MyResponsiveTreeMap />
-      </div>
+        </div>
+        <Divider title={"News"}/>
+        <div style={{"width":"60vw","height":"30vh","marginLeft":"auto", "marginRight":"auto"}}>
+          <IpoTimeline />
+        </div>
+        <div style={{"display":"grid", "gridTemplateColumns": "repeat(auto-fit, minmax(250px,1fr))","height":"30vh"}}> 
+          <NewsCard />
+          <NewsCard />
+          <NewsCard />
+          <NewsCard />
+          <NewsCard />
+        </div>
+          <Divider title={"Trending"} />
+          <SocialMediaChart />
       </div>
     );
   }

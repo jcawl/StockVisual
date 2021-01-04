@@ -4,21 +4,18 @@
 }
 
 .main-container{
-    height: 100vh;
-    width: 100vw;
-    background-color: #06101f;
+    background-color: white;
     display: grid;
-    grid-template-columns: 4 10;
+    grid-template-columns: 2fr 10fr 2fr;
 }
 
 .nav-container{
-    grid-column: 1;
+    grid-column: 2;
+    margin: auto;
 }
 
-.heatmap-container{
+.home-container{
     grid-column: 2;
-    height: 90vh;
-    width: 70vw;
     margin-left: auto;
     margin-right: auto;
 }

@@ -1,0 +1,25 @@
+.divider-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.first-line{
+    display: block;
+    width: 10%;
+    border-bottom: 2px solid rgb(163, 163, 163);
+    margin: auto;
+}
+
+.title{
+    color: rgb(95, 93, 93);
+}
+
+.second-line{
+    display: block;
+    width: 75%;
+    border-bottom: 2px solid rgb(163, 163, 163);
+    margin: auto;
+}
+
